@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #1abc9c; //#36d7b7
+}
+
+.header {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  padding: 3.75%;
+  height: 10em;
+  max-width: 100%;
+}
+
+.title {
+  font-size: 2em;
+  float: left;
+  padding-left: 1.875%;
+  letter-spacing: 0.03em;
+  width: 20%;
+}
+
+.nav {
+  font-size: 1.3em;
+  float: right;
+  width: 50%;
+
+  ul li {
+    float: left;
+    display: inline-block;
+    padding-left: 8%;
+    list-style-type: none;
+    letter-spacing: 0.04em;
+    line-height: 130%;
+    color: #fff;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:visited {
+    color: #fff;
+    opacity: 0.7;
+  }
+
+  a:hover {
+    color: #fff;
+    opacity: 0.8;
+  }
+
+}
+
+.task-input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: dimgray;
+  font-size: 1em;
+  padding: .5em;
+  margin-bottom: 8%;
+  width: 380px;
+  border: none;
+  border-radius: 10px;
+}
+
+.task-input:focus {
+      border: none;
+      outline: none;
+      box-shadow: inset;
+      color: dimgray;
+    }
+
+.task-input:hover {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+
+#list1 {
+  color: #fff;
+  padding-left: 5%;
+  padding-bottom: 6.25%;
+  font-size: 2em;
+  line-height: 140%;
+  height: 15em;
+  width: 100%;
+
+  #list2 {
+    color: #333;
+    background-color: #03a678;
+    padding: 5em;
+  }
+
+}
+
+.remove-task {
+  color: #1abc9c;
+  padding-left: 2%;
+  cursor: pointer;
+}
+
+.remove-task:hover {
+  color: #fff;
+  opacity: .7;
+}
+
+.add-task {
+  padding: 3.2% 5% 3.4% 5%;
+  border-radius: 10%;
+  background-color: #c0392b;
+  margin: .5%;
+  cursor: pointer;
+}
+
+.add-task:hover {
+  background-color: #e74c3c;
+  color: #fff;
+
+}
+
+form div {
+  width: 460px;
+}
+
+form h2 {
+  font-size: 1.4em;
+  padding-bottom: 3%;
+}
+
+.desk {
+  float: right;
+  width: 50.9375%
+
+}
+
+.desk img {
+max-width: 100%;
+padding-top: 8%;
+}
+
+form {
+  float: left;
+}
+
+//footer
+//#87d37c
+//#be90d4
+//#ecf0f1 gray
+//#03a678 emerald
+//#81cfe0 light blue
