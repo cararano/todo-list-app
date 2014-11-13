@@ -1,150 +1,189 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  line-height: 120%;
 }
 
 body {
   background-color: #1abc9c; //#36d7b7
 }
 
-.header {
+h1 {
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   padding: 3.75%;
-  height: 10em;
-  max-width: 100%;
-}
+  font-size: 2.5em;
+  padding-left: 5%;
+  letter-spacing: 0.04em;
 
-.title {
-  font-size: 2em;
-  float: left;
-  padding-left: 1.875%;
-  letter-spacing: 0.03em;
-  width: 20%;
-}
-
-.nav {
-  font-size: 1.3em;
-  float: right;
-  width: 50%;
-
-  ul li {
-    float: left;
-    display: inline-block;
-    padding-left: 8%;
-    list-style-type: none;
-    letter-spacing: 0.04em;
-    line-height: 130%;
-    color: #fff;
+  @media only screen and
+  (max-width:1020px) {
+    padding-left: 7%;
   }
 
-  a:link {
-    text-decoration: none;
-    color: #fff;
+  @media only screen and
+  (max-width:735px) {
+    padding-left: 7%;
   }
 
-  a:visited {
-    color: #fff;
-    opacity: 0.7;
+  @media only screen and
+  (max-width:500px) {
+    padding-left: 7%;
+    padding-top: 8%;
+    padding-bottom: 8%;
   }
-
-  a:hover {
-    color: #fff;
-    opacity: 0.8;
-  }
-
 }
 
 .task-input {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Varela Round', sans-serif;
   color: dimgray;
   font-size: 1em;
   padding: .5em;
   margin-bottom: 8%;
-  width: 380px;
   border: none;
   border-radius: 10px;
+
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: inset;
+    color: dimgray;
+  }
+
+  &:hover {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  @media only screen and
+  (max-width:500px) {
+    // width: 100%;
+    padding: .5em;
+    font-size: .8em;
+    width: 260px;
+  }
+
 }
 
-.task-input:focus {
-      border: none;
-      outline: none;
-      box-shadow: inset;
-      color: dimgray;
-    }
-
-.task-input:hover {
-      border: none;
-      outline: none;
-      box-shadow: none;
-    }
-
-#list1 {
+main {
   color: #fff;
   padding-left: 5%;
   padding-bottom: 6.25%;
   font-size: 2em;
   line-height: 140%;
-  height: 15em;
-  width: 100%;
-
-  #list2 {
-    color: #333;
-    background-color: #03a678;
-    padding: 5em;
-  }
-
 }
 
 .remove-task {
   color: #1abc9c;
   padding-left: 2%;
   cursor: pointer;
-}
 
-.remove-task:hover {
-  color: #fff;
-  opacity: .7;
+  &:hover {
+    color: #fff;
+    opacity: .7;
+  }
+
 }
 
 .add-task {
-  padding: 3.2% 5% 3.4% 5%;
-  border-radius: 10%;
+  padding: 3% 4.5% 3% 4.5%;
+  border-radius: 15%;
   background-color: #c0392b;
-  margin: .5%;
   cursor: pointer;
-}
 
-.add-task:hover {
-  background-color: #e74c3c;
-  color: #fff;
+  &:hover {
+    background-color: #e74c3c;
+    color: #fff;
+  }
 
-}
+  @media only screen and
+  (max-width:735px) {
+    padding: 2.7% 4.5% 2.6% 4.5%;
+    position: relative;
+  }
 
-form div {
-  width: 460px;
-}
+  @media only screen and
+  (max-width:500px) {
+    padding: 2.3% 5% 3% 5.3%;
+    position: relative;
+  }
 
-form h2 {
-  font-size: 1.4em;
-  padding-bottom: 3%;
-}
-
-.desk {
-  float: right;
-  width: 50.9375%
-
-}
-
-.desk img {
-max-width: 100%;
-padding-top: 8%;
 }
 
 form {
   float: left;
+  width: 50%;
+
+  @media only screen and
+  (max-width:1020px) {
+    width: 70%;
+    padding-left: 2%;
+  }
+
+  @media only screen and
+  (max-width:735px) {
+    width: 100%;
+  }
+
+  @media only screen and
+  (max-width:500px) {
+    width: 100%;
+    padding-left: 2%;
+  }
+}
+
+ul {
+  font-size: 1em;
+  line-height: 140%;
+  padding-left: 5%;
+  list-style-type: disc;
+
+  @media only screen and
+  (max-width:500px) {
+    width: 100%;
+    padding-left: 6%;
+    font-size: .8em;
+  }
+}
+
+h2 {
+  font-size: 1.4em;
+  padding-bottom: 3%;
+}
+
+img {
+  width: 50%;
+  max-width: 100%;
+  float: right;
+  padding-top: 0;
+
+  @media only screen and
+  (max-width:735px) {
+    clear: both;
+    display: block;
+    width: 100%;
+    padding-top: 10%;
+  }
+
+  @media only screen and
+  (max-width:500px) {
+    clear: both;
+    display: block;
+    width: 100%;
+    padding-top: 10%;
+  }
+
 }
 
 //footer
@@ -153,3 +192,21 @@ form {
 //#ecf0f1 gray
 //#03a678 emerald
 //#81cfe0 light blue
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
