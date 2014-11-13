@@ -66,12 +66,8 @@ h1 {
   @media only screen and (max-width: 1020px) {
     h1 {
       padding-left: 7%; } }
-  @media only screen and (max-width: 735px) {
-    h1 {
-      padding-left: 7%; } }
   @media only screen and (max-width: 500px) {
     h1 {
-      padding-left: 7%;
       padding-top: 8%;
       padding-bottom: 8%; } }
 
@@ -143,10 +139,11 @@ form {
       padding-left: 2%; } }
   @media only screen and (max-width: 735px) {
     form {
-      width: 100%; } }
+      width: 98%;
+      padding-left: 2%; } }
   @media only screen and (max-width: 500px) {
     form {
-      width: 100%;
+      width: 98%;
       padding-left: 2%; } }
 
 ul {
@@ -174,7 +171,8 @@ img {
       clear: both;
       display: block;
       width: 100%;
-      padding-top: 10%; } }
+      padding-top: 10%;
+      margin-right: -6%; } }
   @media only screen and (max-width: 500px) {
     img {
       clear: both;

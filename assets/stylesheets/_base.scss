@@ -26,13 +26,8 @@ h1 {
   }
 
   @media only screen and
-  (max-width:735px) {
-    padding-left: 7%;
-  }
-
-  @media only screen and
   (max-width:500px) {
-    padding-left: 7%;
+  //   padding-left: 7%;
     padding-top: 8%;
     padding-bottom: 8%;
   }
@@ -133,12 +128,13 @@ form {
 
   @media only screen and
   (max-width:735px) {
-    width: 100%;
+    width: 98%;
+    padding-left: 2%;
   }
 
   @media only screen and
   (max-width:500px) {
-    width: 100%;
+    width: 98%;
     padding-left: 2%;
   }
 }
@@ -174,6 +170,7 @@ img {
     display: block;
     width: 100%;
     padding-top: 10%;
+    margin-right: -6%;
   }
 
   @media only screen and
